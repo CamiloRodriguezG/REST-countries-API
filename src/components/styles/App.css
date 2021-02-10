@@ -1,0 +1,9 @@
+#root {
+  height: 100%;
+}
+#inside-root {
+  height: 100%;
+}
+body {
+  height: 100vh;
+}

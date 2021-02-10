@@ -1,0 +1,123 @@
+.main-container{
+    position: relative;
+    margin: 0;
+    padding: 35px 50px 0 50px;
+    background: hsl(0, 0%, 98%);
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+}
+.search-field{
+    border-radius: 5px;
+    border: none;
+    background: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    width: 450px;
+    padding: 10px 25px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2), -1px -1px 3px rgba(0, 0, 0, 0.2);
+}
+.search-button{
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    cursor: pointer;
+    color: #ccc;
+    outline: none;
+}
+.search-country-field{
+    margin-left: 10px;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+}
+.search-region-field{
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+    border: #ddd 1px solid;;
+    padding: 10px 25px;
+    outline: none;
+}
+.footer{
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background: hsl(0, 0%, 100%);
+    position: relative;
+    margin: 88px -50px -50px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+.contacts-footer ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+.contacts-footer ul li{
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 15px;
+    transition: all 0.5s ease;
+}
+.contacts-footer ul li:hover{
+    transform: translateY(5px);
+}
+@media(max-width: 800px){
+    .main-container{
+        padding: 25px 25px;
+        height: auto;
+    }
+    .search{
+        flex-direction: column;
+    }
+    .search-field{
+        padding: 10px 35px;
+        width: 100%;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), -1px -1px 2px rgba(0, 0, 0, 0.2);
+    }
+    .search-region-field{
+        padding: 15px 20px;
+        margin-top: 40px;
+    }
+    .footer{
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.dark-bg{
+    background: hsl(207, 26%, 17%);
+}
+.search-field-dark{
+    background: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+}
+.search-region-field-dark{
+    background: hsl(209, 23%, 22%);
+    border: none;
+    color: hsl(0, 0%, 100%);
+}
+.input-dark{
+    background: transparent;
+    color: hsl(0,0%,100%);
+}
+.back-button-dark{
+    background: hsl(209, 23%, 22%) !important;
+    color: hsl(0, 0%, 100%);
+}
+.dark-footer{
+    background: hsl(209, 23%, 22%);
+    color: hsl(0,0%,100%);
+}
