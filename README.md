@@ -11,10 +11,12 @@
 <!-- OVERVIEW -->
 
 ## Overview
+-Dark preview
+![Preview-dark](https://github.com/CamiloRodriguezG/REST-countries-API/blob/main/overview_dark.png)
+-Light preview
+![Preview-ligth](https://github.com/CamiloRodriguezG/REST-countries-API/blob/main/overview_light.png)
 
-![Preview]()
-
-- You can see the page here: 
+- You can see the page here: https://rest-countries-api-rose.vercel.app, hosted by vercel
 - This is a app using the countries API, for a frontend Challenge.
 
 ### Built With
