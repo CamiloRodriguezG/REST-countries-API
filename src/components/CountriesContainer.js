@@ -23,12 +23,23 @@ class CountriesContainer extends React.Component {
       );
   }
 
+  componentDidUpdate(){
+    fetch(this.state.url)
+      .then((response) => response.json())
+      .then((countryInf) =>
+        this.setState({
+          countryInfo: countryInf,
+          fetching: false,
+        })
+      );
+  }
+
   searchForBorderCountry(event) {
     this.setState({
       fetching: true,
       url: "https://restcountries.eu/rest/v2/alpha/" + event.target.value,
     });
-    this.componentDidMount();
+    this.componentDidUpdate();
   }
 
   render() {

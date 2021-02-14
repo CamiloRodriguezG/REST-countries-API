@@ -18,7 +18,7 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div id="inside-root">
+      <div className="inside-root">
         {this.state.darkMode && (
           <div className="navbar nav-dark">
             <p>Where in the world</p>
@@ -44,6 +44,54 @@ class App extends React.Component {
           </div>
         )}
         <MainContainer darkMode={this.state.darkMode} />
+        {this.state.darkMode && (
+          <footer className="footer dark-footer">
+            <p>Developed by Camilo Rodriguez for a FrontEndMentor Challenge</p>
+            <div className="contacts-footer contacts-dark">
+              <ul>
+                <li>
+                  <a target="_blank" href="https://github.com/CamiloRodriguezG">
+                    <i class="fab fa-github-alt"></i>
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://twitter.com/Camilo13078226">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://codepen.io/camilorodriguezg">
+                    <i class="fab fa-codepen"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </footer>
+        )}
+        {!this.state.darkMode && (
+          <footer className="footer">
+            <p>Developed by Camilo Rodriguez for a FrontEndMentor Challenge</p>
+            <div className="contacts-footer">
+              <ul>
+              <li>
+                  <a target="_blank" href="https://github.com/CamiloRodriguezG">
+                    <i class="fab fa-github-alt"></i>
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://twitter.com/Camilo13078226">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://codepen.io/camilorodriguezg">
+                    <i class="fab fa-codepen"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </footer>
+        )}
       </div>
     );
   }

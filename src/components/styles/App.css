@@ -1,9 +1,9 @@
-#root {
-  height: 100%;
-}
-#inside-root {
+/* #root {
   height: 100%;
 }
 body {
   height: 100vh;
 }
+.inside-root{
+  height: auto;
+} */

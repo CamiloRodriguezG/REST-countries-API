@@ -109,6 +109,32 @@ span{
 .country-border-button:hover{
     transform: translateY(-5px);
 }
+.dark-card{
+    background: hsl(209, 23%, 22%) !important;
+    color: hsl(0, 0%, 100%) !important;
+}
+.one-country-dark-container{
+    background: hsl(207, 26%, 17%);
+}
+.info-dark{
+    color: hsl(0,0%,100%) !important;
+}
+.border-button-dark{
+    background: hsl(209, 23%, 22%);
+    color: hsl(0,0%,100%) !important;
+}
+@media(max-width: 1200px){
+    .countries-container{
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+    }
+}
+@media(max-width: 1000px){
+    .countries-container{
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+}
 @media(max-width: 800px){
     .countries-container{
         grid-template-columns: auto;
@@ -131,18 +157,4 @@ span{
     .country-border-button{
         margin: 0 10px 10px 0;
     }
-}
-.dark-card{
-    background: hsl(209, 23%, 22%) !important;
-    color: hsl(0, 0%, 100%) !important;
-}
-.one-country-dark-container{
-    background: hsl(207, 26%, 17%);
-}
-.info-dark{
-    color: hsl(0,0%,100%) !important;
-}
-.border-button-dark{
-    background: hsl(209, 23%, 22%);
-    color: hsl(0,0%,100%) !important;
 }
